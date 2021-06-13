@@ -1,0 +1,34 @@
+<p>{{pessoa.nome}} - {{pessoa.sobrenome}}</p>
+<p>{{100 + 100}}</p>
+
+
+<button (click) = "incrementar()">{{buttonName}}</button>
+
+<button [disabled] = "btnDisabled">Button 2</button>
+
+<button (click) = "save()">Save</button>
+
+<section>
+  <button [disabled] = "!btnEnabled">My button 1</button>
+  <button [disabled] = "!btnEnabled">My button 2</button>
+
+  <button (click) = "disable()" [disabled] = "!btnEnabled">Disable</button>
+
+  <mat-progress-spinner
+        color="primary"
+        [mode]="spinnerMode"
+        value="0">
+  </mat-progress-spinner>
+
+
+</section>
+
+<section>
+  <p>
+    <mat-checkbox (change) = "cbChange($event)">Disable / Enable</mat-checkbox>
+  </p>
+
+</section>
+
+
+<app-two-way></app-two-way>

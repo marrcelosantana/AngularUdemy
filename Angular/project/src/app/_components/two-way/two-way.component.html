@@ -1,0 +1,38 @@
+<section>
+  <mat-card class="matCard">
+    <mat-card-content>
+      <form>
+
+        <mat-form-field class="formField">
+          <input matInput placeholder="Enter your name" [(ngModel)] = "name1" name = "anyname1">
+        </mat-form-field>
+
+        <mat-form-field class="formField">
+          <input matInput placeholder="Enter your name" [(ngModel)] = "name2" name = "anyname2">
+        </mat-form-field>
+
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <p>{{name1}}</p>
+      <p>{{name2}}</p>
+    </mat-card-actions>
+  </mat-card>
+
+  <br><br>
+
+  <form >
+    <input type="text" placeholder="First Name" name = "firstname" [(ngModel)] = "client.firstName">
+    <input type="text" placeholder="Last Name" name = "lastname" [(ngModel)] = "client.lastName">
+    <input type="text" placeholder="Addres" name = "addres" [(ngModel)] = "client.addres">
+    <input type="text" placeholder="Age" name = "age" [(ngModel)] = "client.age">
+
+    <br><br>
+
+    <p>Name: {{client.firstName}}</p>
+    <p>Last Name: {{client.lastName}}</p>
+    <p>Addres: {{client.addres}}</p>
+    <p>Age: {{client.age}}</p>
+
+  </form>
+</section>
